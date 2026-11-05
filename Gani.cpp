@@ -229,3 +229,38 @@ public:
         cout<<"count: "<<count;
     }
 };
+
+
+#include<iostream>
+using namespace std;
+#include<string>
+class department
+{public:
+    char name[20];
+    department(){
+    strcpy(name,"abc");
+    cout<<"dept created";
+    }
+    ~department()
+    {
+        cout<<"depart ment class destroyed "<<endl;
+    }
+};
+class professor
+{
+public:
+    int pid,exp;
+    department d;public:professor()
+    {
+        pid=1; exp=1;
+    }
+    ~professor()
+    {
+        cout<<"professor class destroyed,department exist"<<endl;
+    }
+};
+main()
+{
+    professor p;
+    department d;
+}
