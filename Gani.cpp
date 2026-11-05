@@ -211,3 +211,21 @@ int main()
 	ff.in3();
 	ff.out();
 }
+
+
+class counter
+{
+    int count;
+public:
+    counter(int val)
+    {count=val;
+    }
+    void operator++()
+    {
+        ++count;
+    }
+    void display()
+    {
+        cout<<"count: "<<count;
+    }
+};
